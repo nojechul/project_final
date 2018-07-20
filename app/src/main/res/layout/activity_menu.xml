@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:orientation="vertical"
+    android:paddingLeft="30sp">
+
+    <ImageView
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logocolored"
+        android:layout_marginTop="80sp"
+        android:layout_marginLeft="5sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메뉴"
+        android:textSize="30sp"
+        android:fontFamily="@font/nanumbarungothicbold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="25sp"
+        android:fontFamily="@font/nanumbarungothic"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#cccccc"
+        android:layout_marginTop="10sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:src="@drawable/icononepurple"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홈"
+            android:textSize="20sp"
+            android:textColor="@color/colorIP"
+            android:fontFamily="@font/nanumbarungothic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:src="@drawable/icontwogrey"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소음 개선 요청"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:src="@drawable/iconthreegrey"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일정"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:src="@drawable/iconfourgrey"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="요청 받은 기록"
+            android:textSize="20sp"
+            android:fontFamily="@font/nanumbarungothic"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

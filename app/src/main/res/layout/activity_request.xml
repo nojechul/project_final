@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RequestActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorIP"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menuwhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:text="소음 개선 요청"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorIP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35sp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:text="101동"
+            android:id="@+id/dongTV"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:id="@+id/hoTV"
+            android:text="101호"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35sp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:id="@+id/reason"
+            android:text="동물소리"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/TV_request_type"
+            android:layout_width="match_parent"
+            android:layout_height="72sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20sp"
+                android:fontFamily="@font/nanumbarungothic"
+                android:text="동 선택"
+                android:textColor="#516AF5"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/LV_RQ"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:dividerHeight="12sp"
+            tools:listitem="@layout/item_request_type" />
+
+        <View
+            android:layout_width="1sp"
+            android:layout_height="5sp"/>
+
+        <Button
+            android:id="@+id/BT_Request"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="13sp"
+            android:background="@drawable/login_button"
+            android:backgroundTint="#516AF5"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:text="개선 요청"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

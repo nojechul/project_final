@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#516AF5"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/nanumbarungothicbold"
+        android:text="환영합니다!"
+        android:textColor="#fff"
+        android:textSize="38sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"
+        android:id="@+id/shortinformation"
+        android:fontFamily="@font/nanumbarungothiclight"
+        android:text="간단한 정보를 입력해주세요."
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/apartmentlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shortinformation"
+        android:layout_marginTop="100sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/apartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:text="아파트"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/apartmentedit"
+            android:layout_width="200sp"
+            android:layout_height="35sp"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/nanumbarungothiclight"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            tools:text="선린아파트" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/donglayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/apartmentlayout"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:text="동"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/dongedit"
+            android:layout_width="200sp"
+            android:layout_height="35sp"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/nanumbarungothiclight"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            tools:text="101" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/holayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donglayout"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30sp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothicbold"
+                android:text="호수"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/hoedit"
+            android:layout_width="200sp"
+            android:layout_height="35sp"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/nanumbarungothiclight"
+            android:textAlignment="center"
+            android:textColor="#516AF5"
+            android:textSize="20sp"
+            android:backgroundTint="#fff"
+            tools:text="101" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:text="시작"
+        android:textSize="20sp"
+        android:fontFamily="@font/nanumbarungothic"
+        android:id="@+id/start"
+        android:textColor="#516AF5"
+        android:background="@drawable/login_button"
+        android:backgroundTint="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50sp"/>
+
+
+</RelativeLayout>

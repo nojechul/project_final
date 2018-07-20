@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_button"
+    android:backgroundTint="#ffffff"
+    android:padding="20sp"
+    android:orientation="vertical"
+    android:layout_marginTop="30sp"
+    android:layout_marginLeft="30sp"
+    android:layout_marginRight="30sp"
+    android:layout_marginBottom="10sp"
+    >
+
+    <TextView
+        android:id="@+id/dataandaddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01일 | 101동 1203호"
+        android:textColor="@color/colorIP"
+        android:textSize="25sp"
+        android:fontFamily="@font/nanumbarungothicbold"
+        />
+
+    <TextView
+        android:id="@+id/complain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="애완동물 소리로 인하여 피해를 받고 있습니다. 조치 부탁드려요!"
+        android:textColor="@color/colorIP"
+        android:textSize="20sp"
+        android:fontFamily="@font/nanumbarungothic"
+        android:layout_marginTop="20sp"
+        />
+
+</LinearLayout>
